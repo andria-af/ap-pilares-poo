@@ -11,13 +11,13 @@ import { Cavalo, Gato, Cachorro, Ingresso, Normal, Vip, Camarote, Velho, Novo, I
 // valor adicional. Altere o método imprimeValor para mostrar o
 // valor do ingresso somado com o adicional.
 
-const ingresso= new Normal(100);
+const ingresso= new Normal();
 ingresso.imprimeValor();
 
-const ingressoVip= new Vip(100, 100);
+const ingressoVip= new Vip();
 ingressoVip.imprimeValor();
 
-const ingressoCamarote= new Camarote(100,200);
+const ingressoCamarote= new Camarote();
 ingressoCamarote.imprimeValor();
 
 // 2

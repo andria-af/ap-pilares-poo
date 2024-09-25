@@ -15,9 +15,6 @@ export abstract class  Ingresso {
 //a 
 
 export class Normal extends Ingresso{
-    constructor(
-        valorR$ :number,
-    ){super(valorR$)}
 
     public imprimeValor(): void {
         console.log(`Valor do ingresso normal R$=${this.valorR$}`) 
@@ -30,8 +27,8 @@ export class Normal extends Ingresso{
 export class Vip extends Ingresso{
     constructor (
         public valorAdicional: number = 100,
-        valorR$:number
-    ){super(valorR$)}
+        
+    ){super()}
 
     public imprimeValor(): void {
         this.valorR$= this.valorR$+ this.valorAdicional
@@ -44,8 +41,7 @@ export class Vip extends Ingresso{
 export class Camarote extends Ingresso{
     constructor (
         public valorAdicional: number = 200,
-        valorR$: number
-    ){super(valorR$)}
+    ){super()}
 
     public imprimeValor(
         
